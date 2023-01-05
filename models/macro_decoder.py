@@ -1111,6 +1111,7 @@ def demo():
 
     model = ResidualGenomeDecoder(genome, channels, repeats=[1, 2, 3]).get_model()
     out = model(torch.autograd.Variable(data))
+    print(model)
 
 
 if __name__ == "__main__":
